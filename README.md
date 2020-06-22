@@ -1,2 +1,2 @@
-# Data-Structure-Algorithms
-Important DSA Programs
+## Data-Structure-Algorithms ##
+>Important DSA Programs

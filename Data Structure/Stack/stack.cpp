@@ -3,7 +3,6 @@
 /* Stack is a linear data structure which follow a particular order in which the operations
  are performed. The Order may be LIFO or FILO. */
 
-
 #include <iostream>
 using namespace std;
 

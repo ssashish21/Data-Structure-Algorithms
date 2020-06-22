@@ -1,3 +1,5 @@
+//Algorithm for array rotation in O(n) time and O(1) time
+
 #include<bits/stdc++.h>
 using namespace std;
 

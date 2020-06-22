@@ -3,7 +3,8 @@
 
   * [Data Structure](https://github.com/ssashish21/Data-Structure-Algorithms/tree/master/Data%20Structure)
       * [Array](https://github.com/ssashish21/Data-Structure-Algorithms/tree/master/Data%20Structure/Array)
-          * [Dutch National Flag Problem](https://github.com/ssashish21/Data-Structure-Algorithms/blob/master/Data%20Structure/Array/DutchNationalFlagProb.cpp)       
+          * [Dutch National Flag Problem](https://github.com/ssashish21/Data-Structure-Algorithms/blob/master/Data%20Structure/Array/DutchNationalFlagProb.cpp) 
+          * [Juggling Algorithm](https://github.com/ssashish21/Data-Structure-Algorithms/blob/master/Data%20Structure/Array/Juggling%20Algorithm.cpp)      
       * [Linked List](https://github.com/ssashish21/Data-Structure-Algorithms/tree/master/Data%20Structure/Linked%20List)
           * [Singly LL implementation](https://github.com/ssashish21/Data-Structure-Algorithms/blob/master/Data%20Structure/Linked%20List/linkedlist.cpp)
      * [Stack](https://github.com/ssashish21/Data-Structure-Algorithms/tree/master/Data%20Structure/Stack)

@@ -17,8 +17,4 @@
           * [Activity Selection](https://github.com/ssashish21/Data-Structure-Algorithms/blob/master/Algorithms/Greedy/BUSYMAN.cpp)
       * [Dynamic Programming](https://github.com/ssashish21/Data-Structure-Algorithms/tree/master/Algorithms/Dynamic%20Programming)
           * [Kadane's Algorithm](https://github.com/ssashish21/Data-Structure-Algorithms/blob/master/Algorithms/Dynamic%20Programming/kadane.cpp)
-   * [Codechef](https://github.com/ssashish21/Data-Structure-Algorithms/tree/master/codechef)
-     * [Practice](https://github.com/ssashish21/Data-Structure-Algorithms/tree/master/codechef/Practice)
-     * [contest](https://github.com/ssashish21/Data-Structure-Algorithms/tree/master/codechef/contest)
-         * [June challenge 2020 Div 2](https://github.com/ssashish21/Data-Structure-Algorithms/tree/master/codechef/contest/June%20Challenge%202020%20div%202)
-
+  

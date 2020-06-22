@@ -10,20 +10,20 @@ void DNFP(vector<int> &arr){
 	int high = arr.size() - 1;
 	int pivot = 1;
 	while(mid <= high){
-	 switch (arr[mid])  
-        {  
-        case 0:                            // mid is 0 
-            swap(arr[low++], arr[mid++]);  
-            break;  
+	    switch (arr[mid]) 
+	      {  
+		case 0:                            // mid is 0 
+		    swap(arr[low++], arr[mid++]);  
+		    break;  
 
-        case 1:                           // mid is 1 . 
-            mid++;  
-            break;  
- 
-        case 2:                           // mid is 2  
-            swap(arr[mid], arr[high--]);  
-            break;  
-        }  
+		case 1:                           // mid is 1 . 
+		    mid++;  
+		    break;  
+
+		case 2:                           // mid is 2  
+		    swap(arr[mid], arr[high--]);  
+		    break;  
+	      }  
 	}
 }
 
@@ -34,6 +34,6 @@ int main(){
 
 	DNFP(A);
 
-    printArray(A);
+   	printArray(A);
 	return 0;
 }

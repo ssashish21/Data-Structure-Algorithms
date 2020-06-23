@@ -18,4 +18,7 @@
           * [Activity Selection](https://github.com/ssashish21/Data-Structure-Algorithms/blob/master/Algorithms/Greedy/BUSYMAN.cpp)
       * [Dynamic Programming](https://github.com/ssashish21/Data-Structure-Algorithms/tree/master/Algorithms/Dynamic%20Programming)
           * [Kadane's Algorithm](https://github.com/ssashish21/Data-Structure-Algorithms/blob/master/Algorithms/Dynamic%20Programming/kadane.cpp)
+    * [Math](https://github.com/ssashish21/Data-Structure-Algorithms/tree/master/Math)
+        *[Geometry]
+            *[Convex Hull](https://github.com/ssashish21/Data-Structure-Algorithms/blob/master/Math/convexhull.cpp)
   

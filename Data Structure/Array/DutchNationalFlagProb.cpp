@@ -8,7 +8,6 @@ using namespace std;
 void DNFP(vector<int> &arr){
 	int low = 0, mid = 0;
 	int high = arr.size() - 1;
-	int pivot = 1;
 	while(mid <= high){
 	    switch (arr[mid]) 
 	      {  

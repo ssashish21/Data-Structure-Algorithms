@@ -24,7 +24,7 @@ o/p: 10 (Fruits picked by marry: banana + melon,she got max profit and the
 */
 
 // Recursive solution:
-/*
+
 int knapsack(vi &weight,vi &profit,int capacity,int n){
     //if knapsack is empty / no space or
     //there is no item to pick
@@ -44,7 +44,7 @@ int knapsack(vi &weight,vi &profit,int capacity,int n){
         return knapsack(weight,profit,capacity,n-1);
 
 }
-
+/*
 In the recursive solution there may occure stack overflow condition and our program stops.
 Or sometime it take to much time to compute all the values and our program may end up with
 TLE(Time Limit Exceed), most of the time competative programers face this problem.
@@ -56,6 +56,9 @@ MEMOIZATION is the best method to overcome this type of situation.
 
 /*
 MEMOIZATION:
+Time  : O(capacity*number of items)
+      : O(n^2)
+Space : O(n^2)
 
 Overlaping subproblem arise in every recursive solution if the there are two or more branches
 of every nodes in recursion tree.
@@ -87,13 +90,44 @@ Defination: In computing, memoization or memoisation is an optimization techniqu
 #include<bits/stdc++.h>
 using namespace std;
 #define vi vector<int>
+#define MAX 1005
+int dp[MAX][MAX];
 
+void filldp(){
+    for(int i = 0 ; i < MAX ; i++)
+        for(int j = 0 ; j < MAX ; j++)
+            dp[i][j] = -1;
+}
+
+int knapsack(vi &weight,vi &profit,int capacity,int n){
+    if(capacity == 0 || n == 0)
+        return 0;
+    
+    if(dp[capacity][n] != -1)
+        return dp[capacity][n];
+
+    if(capacity >= weight[n-1])
+        dp[capacity][n] = max(profit[n-1] + knapsack(weight,profit,capacity-weight[n-1],n-1) ,knapsack(weight,profit,capacity,n-1));
+    
+    else
+        return dp[capacity][n] = knapsack(weight,profit,capacity,n-1);
+
+}
 
 int main(){
     int n =4;
     vi weight= {2,3,1,4};
     vi profits= {4,5,3,7};
     int capacity = 5;
+    filldp();
     cout<<knapsack(weight,profits,capacity,n);
     return 0;
 }
+
+/*
+We can further optimize the space compelxity of this problem by using Top down approach.
+Top down method / Real Dynamic Programing
+
+> Potential to transform exponential-time brute-force solutions into polynomial-time algorithms.
+> Much more efficient because its iterative
+*/

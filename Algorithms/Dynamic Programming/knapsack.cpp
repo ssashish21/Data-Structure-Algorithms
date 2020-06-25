@@ -23,7 +23,7 @@ o/p: 10 (Fruits picked by marry: banana + melon,she got max profit and the
 
 */
 
-// Recursive solution:
+/* Recursive solution:
 
 int knapsack(vi &weight,vi &profit,int capacity,int n){
     //if knapsack is empty / no space or
@@ -44,7 +44,6 @@ int knapsack(vi &weight,vi &profit,int capacity,int n){
         return knapsack(weight,profit,capacity,n-1);
 
 }
-/*
 In the recursive solution there may occure stack overflow condition and our program stops.
 Or sometime it take to much time to compute all the values and our program may end up with
 TLE(Time Limit Exceed), most of the time competative programers face this problem.

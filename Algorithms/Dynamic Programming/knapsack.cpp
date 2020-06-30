@@ -130,3 +130,22 @@ Top down method / Real Dynamic Programing
 > Potential to transform exponential-time brute-force solutions into polynomial-time algorithms.
 > Much more efficient because its iterative
 */
+
+
+int knapsackBottomUp(vi &weight,vi &profit,int capacity,int n){
+    //initilization 
+    int dp[n+1][capacity+1];
+    for(int i = 0 ; i < n+1 ; i++) dp[i][0] = 0;
+    for(int j = 0 ; j < capacity+1;j++) dp[0][j] = 0;
+    
+    // fill the table
+    for(int i = 1; i < n+1 ; i++){
+       for(int j = 1; j < capacity+1 ; j++){
+           if(capacity  >= weight[i-1])
+                dp[i][j] = max(dp[i-1][j-weight[i-1]] , dp[i-1][j]);
+            else
+                dp[i][j] = dp[i-1][j];
+       }
+   }
+    return dp[n][capacity]; 
+}

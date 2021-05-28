@@ -1,0 +1,14 @@
+Strings are immutable in Java because of intern.
+
+Intern :It creates exact copy of heap string object in string constant pool.
+It can be used to return string from memory, if it is created by new keyword. 
+
+Advantage : Reduce memory.
+Disadvantage : Increase time.
+solution : use stringBuilder.
+
+The string is Immutable in Java because String objects are cached in the String pool. Since cached String literals are shared between multiple clients there is always a risk, where one client's action would affect all another client. For example, if one client changes the value of the String "Test" to "TEST" all other clients will also see that changed value.
+
+
+In java you can not really change the real character of any string you can only change the address of the heap memory which is pointing to the string pool. This is a good thing but it really increse the time.
+

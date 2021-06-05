@@ -41,7 +41,7 @@ public class Main {
     }
 
     int pop1() {
-      if(size1() == 0){
+      if(tos1 == -1){
         System.out.println("Stack underflow");
         return -1;
       } else {
@@ -52,7 +52,7 @@ public class Main {
     }
 
     int pop2() {
-      if(size1() == data.length){
+      if(tos2 == data.length){
         System.out.println("Stack underflow");
         return -1;
       } else {
@@ -63,8 +63,9 @@ public class Main {
     }
 
     int top1() {
-      if(size1() == 0){
+      if(tos1 == -1){
         System.out.println("Stack underflow");
+        return -1;
       } else {
         int val = data[tos1];
         return val;
@@ -72,8 +73,9 @@ public class Main {
     }
 
     int top2() {
-      if(size2() == 0){
+      if(tos2 == data.length){
         System.out.println("Stack underflow");
+        return -1;
       } else {
         int val = data[tos2];
         return val;

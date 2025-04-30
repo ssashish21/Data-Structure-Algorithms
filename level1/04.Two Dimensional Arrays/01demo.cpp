@@ -1,10 +1,10 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 #define ll long long
 
 int main(){
 	int r , c;
-	cin >> r >> c;
+	cin >> r >> c; //Taking input
 
 	int ar[r][c]; // create 2d array
 

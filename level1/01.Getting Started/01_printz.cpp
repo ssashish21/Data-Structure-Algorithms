@@ -1,6 +1,6 @@
 // You are required to print a 'z' of size 5 using '*'.
 
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 #define ll long long
 

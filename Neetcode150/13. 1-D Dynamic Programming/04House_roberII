@@ -1,0 +1,49 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+// Problem: House Robber II
+// Pattern: Dynamic Programming (Circular + Pick/Skip)
+
+// Approach:
+// Since houses are circular, we cannot take both first and last.
+// So we break into two cases:
+// 1. Rob from index 0 → n-2
+// 2. Rob from index 1 → n-1
+
+// Time: O(n)
+// Space: O(1)
+
+class Solution {
+public:
+    int rob(vector<int>& nums) {
+        int n = nums.size();
+        if(n == 1) return nums[0];
+
+        return max(
+            solve(nums, 0, n-2),
+            solve(nums, 1, n-1)
+        );
+    }
+
+private:
+    int solve(vector<int>& nums, int l, int r){
+        int prev2 = 0, prev1 = 0;
+
+        for(int i = l; i <= r; i++){
+            int cur = max(prev1, prev2 + nums[i]);
+            prev2 = prev1;
+            prev1 = cur;
+        }
+
+        return prev1;
+    }
+};
+
+
+// Key Insight:
+// Circular dependency → break into two linear problems
+
+// Mistake:
+// Trying to include both first and last house

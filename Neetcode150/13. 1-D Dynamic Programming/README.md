@@ -3,7 +3,7 @@
 ## 🧠 What is 1D DP?
 
 1D DP means:
-- State depends only on previous states
+- State depends on previous states
 - Stored in a 1D array or few variables
 
 ---
@@ -63,12 +63,35 @@ Problems:
 
 ---
 
+### 7. Palindrome (Expand / DP)
+- Check palindromes using expand or DP
+
+Problems:
+- Longest Palindromic Substring
+- Count Palindromic Substrings
+
+---
+
+## 🧠 Palindrome Techniques
+
+### 1. Expand Around Center (Best)
+- Try (i, i) → odd length
+- Try (i, i+1) → even length
+- Time: O(n^2), Space: O(1)
+
+### 2. DP (Gap Strategy)
+- dp[i][j] = true if s[i..j] is palindrome
+- Time: O(n^2), Space: O(n^2)
+
+---
+
 ## 🧠 Key Tricks
 
 - Reverse loop → avoid reuse (0/1 Knapsack)
 - Track min + max → for product problems
 - Use binary search → optimize LIS to O(n log n)
 - Convert 2D → 1D when possible
+- Break problems into subproblems (left/right or prefix)
 
 ---
 
@@ -78,6 +101,7 @@ Problems:
 - Using forward loop when backward needed
 - Confusing count vs min problems
 - Ignoring edge cases (0, empty)
+- Treating palindrome as brute force instead of pattern
 
 ---
 
@@ -94,6 +118,8 @@ Problems:
 | Coin Change | Unbounded Knapsack |
 | Longest Increasing Subsequence | LIS |
 | Russian Doll Envelopes | LIS + Sorting |
+| Longest Palindromic Substring | Expand Around Center |
+| Count Palindromic Substrings | Palindrome DP |
 
 ---
 
